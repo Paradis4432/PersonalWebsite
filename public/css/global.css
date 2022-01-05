@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgColorMain: #0a192f;
+    --bgLightColor: #393E46;
+    --textColor: #FFD700;
+    --textLightColor: #EEEEEE;
+    --iconColor: #e9e9e9;
+}
