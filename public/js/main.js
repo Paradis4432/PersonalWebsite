@@ -12,4 +12,8 @@ $(function () {
             $(this).attr("value", "<Intro>  </Intro>");
         }
     });
+
+    $("#homeDiv").collapse({
+        show: true
+    });
 });
