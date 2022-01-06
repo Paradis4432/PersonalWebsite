@@ -15,7 +15,6 @@ $(document).ready(function () {
     }
     localStorage.setItem("couter", n);
 
-    n = 8
     if (n == 1) {
         //P
         a([0,1,1,1,0,0,0,0]);

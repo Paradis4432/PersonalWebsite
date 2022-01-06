@@ -11,19 +11,23 @@
     <!-- Custom Css-->
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="left-display.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="intro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
-<body style="height: 5000px;">
-    <div class="container-fluid pl-0">
+<body>
+    <div class="container-fluid p-0">
         <div class="left-display">
             <div id="top" class="pt-3 pb-3">
             </div>
             <div id="bottom">
-                <a href="https://github.com/Paradis4432" aria-label="GitHub" target="_blank" rel="noreferrer" style="color: var(--iconColor); ">
+                <a href="https://github.com/Paradis4432" aria-label="GitHub" target="_blank" rel="noreferrer"
+                    style="color: var(--iconColor); ">
                     <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-github" style="height: 32; width: 32;">
@@ -41,8 +45,19 @@
             <header>
                 <%- include("partials/header.ejs") %>
             </header>
-            <main>
-                <p>this is a test</p>
+            <main class="flex-column" style="background-color: var(--bgColorMain); height: 5000px;">
+
+                <input type="button" value="<Intro>" class="toggleButton" id="intro" >
+                <div id="introDiv" >
+                    <%- include("partials/intro.ejs") %>
+                    <input type="button" value="</Intro>" class="toggleButton">
+                </div>
+
+                <input type="button" value="Who Am I?" class="toggleButton" onclick="toggle('whoAmIDiv')">
+                <div id="whoAmIDiv">
+                    <%- include("partials/whoAmI.ejs") %>
+                </div>
+
             </main>
             <footer>
 
