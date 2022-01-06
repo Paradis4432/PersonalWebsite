@@ -13,5 +13,8 @@
 
 #top{
     color: var(--textColor);
-    min-height: 90vh;
+}
+
+#bottom{
+    margin-bottom: 50px;
 }
