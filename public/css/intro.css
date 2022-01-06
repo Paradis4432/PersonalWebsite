@@ -1,0 +1,26 @@
+introText0{
+    color: var(--textLightColor);
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Changa', sans-serif;
+}
+
+introText1{
+    color: grey;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Changa', sans-serif;
+    position: relative;
+    top: -20px;
+}
+
+introText2{
+    line-height: 1.5rem;
+    padding-top: 100px;
+    color: var(--introGreyColor);
+    font-size: 20px;
+}
+
+hi {
+    color: var(--textColor)
+}
