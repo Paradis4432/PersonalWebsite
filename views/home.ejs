@@ -74,7 +74,7 @@
             <header>
                 <%- include("partials/header.ejs") %>
             </header>
-            <main class="flex-column" style="background-color: var(--bgColorMain); height: 5000px;">
+            <main class="flex-column" style="background-color: var(--bgColorMain);">
 
                 <p><a class="toggleButton toggleButtonML9" href="#homeDiv" role="button" data-toggle="collapse"
                         aria-controls="homeDiv">Home</a></p>
@@ -87,23 +87,30 @@
                     </div>
 
                     <br><br><br><br>
+                    
                     <p><a class="toggleButton toggleButtonML11" href="#introDiv" role="button" data-toggle="collapse"
                             aria-controls="introDiv">Introduction</a></p>
 
                     <div class="collapse multi-collapse " id="introDiv">
                         <%- include("partials/intro.ejs") %>
                     </div>
+                    
                     <br><br><br><br>
 
                     <div id="terminalDiv">
                         <%- include("partials/terminal.ejs") %>
                     </div>
 
+                    <br><br><br><br>
+
+                    <div id="helpDiv">
+                        <%- include("partials/help.ejs") %>
+                    </div>
                 </div>
 
             </main>
             <footer>
-
+                <%- include("partials/footer.ejs") %>
             </footer>
 
             <%- include("partials/frameworks.ejs") %>
