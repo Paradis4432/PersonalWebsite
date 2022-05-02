@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- normal head -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cd ./Paradis</title>
+
+    <!-- Custom Css-->
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="left-display.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="terminal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- jquery terminal -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal@2.x.x/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal@2.x.x/css/jquery.terminal.min.css" />
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="left-display d-flex flex-column bd-highlight">
+            <div id="top" class="pt-3 pb-3">
+                <!-- binary / letter -->
+            </div>
+
+            <div class="mt-auto p-2 bd-highlight" id="bottom">
+                <a href="https://github.com/Paradis4432" aria-label="GitHub" target="_blank" rel="noreferrer"
+                    style="color: var(--iconColor); ">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-github" style="height: 32; width: 32;">
+                        <title>
+                            GitHub
+                        </title>
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
+                <br>
+                <br>
+                <a href="gmail">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 172 172"
+                        style=" fill:#ffffff;">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <path d="M0,172v-172h172v172z" fill="none"></path>
+                            <g fill="#ffffff">
+                                <path
+                                    d="M22.93333,28.66667c-6.26689,0 -11.46667,5.19977 -11.46667,11.46667v91.73333c0,6.26689 5.19977,11.46667 11.46667,11.46667h126.13333c6.26689,0 11.46667,-5.19977 11.46667,-11.46667v-91.73333c0,-6.26689 -5.19977,-11.46667 -11.46667,-11.46667zM38.40885,40.13333h95.18229l-47.59114,35.17266zM28.66667,54.32109l57.33333,42.37291l57.33333,-42.37291v77.54557h-114.66667z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+
+
+        </div>
+        <div class="pusher" style="padding-left: 5%;">
+            <header>
+                <%- include("partials/header.ejs") %>
+            </header>
+            <main class="flex-column" style="background-color: var(--bgColorMain);">
+
+                <p><a class="toggleButton toggleButtonML9" href="#homeDiv" role="button" data-toggle="collapse"
+                        aria-controls="homeDiv">Home</a></p>
+                <div id="homeDiv">
+                    <!-- this holder has the full main website, to collapse all elements -->
+
+
+                    <div id="whoAmIDiv">
+                        <%- include("partials/whoAmI.ejs") %>
+                    </div>
+
+                    <br><br><br><br>
+                    
+                    <p><a class="toggleButton toggleButtonML11" href="#introDiv" role="button" data-toggle="collapse"
+                            aria-controls="introDiv">Introduction</a></p>
+
+                    <div class="collapse multi-collapse " id="introDiv">
+                        <%- include("partials/intro.ejs") %>
+                    </div>
+                    
+                    <br><br><br><br>
+
+                    <div id="terminalDiv">
+                        <%- include("partials/terminal.ejs") %>
+                    </div>
+
+                    <br><br><br><br>
+
+                    <div id="helpDiv">
+                        <%- include("partials/help.ejs") %>
+                    </div>
+                </div>
+
+            </main>
+            <footer>
+                <%- include("partials/footer.ejs") %>
+            </footer>
+
+            <%- include("partials/frameworks.ejs") %>
+        </div>
+    </div>
+</body>
+
+</html>
