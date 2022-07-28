@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "oldConsole";
+}
+
+:root {
+    --mainTextGold: #FFD700;
+}
+
+body {
+    background-color: black;
+}
+
+.loadingMainText {
+    color: white;
+}
+
+.headerNavButtonsText {
+    color: white;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+.subHeaderNavButtonText {
+    font-size: 20px;
+}
+
+.headerNavButtonsIcon {
+    padding-top: 20px;
+    text-align: right;
+}
+
+.headerParadisText {
+    color: var(--mainTextGold);
+    padding: 10px;
+
+}
+
+.consoleTypeMessage {
+    color: white;
+}
+
+.MHMainMnessage {
+    padding-top: 40px;
+    padding-left: 20%;
+}
+
+.welcomeMH {
+    color: var(--mainTextGold);
+}
+
+.dataMH {
+    color: white;
+    padding-left: 5%;
+}
+
+.MHMainMnessagePC{
+    padding-left: 15%;
+}
+
+.MHMainMnessageM{
+    padding-left: 20%;
+}
+
+.aboutMe, .services{
+    padding-top: 150px;
+}
+
+@media only screen and (min-width: 1023px) {
+    .headerNavButtonsText {
+        display: block;
+    }
+
+    .headerNavButtonsIcon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .headerNavButtonsText {
+        display: none;
+    }
+
+    .headerNavButtonsIcon {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .loadingMainText {
+        font-size: 40px;
+    }
+
+    .headerParadisText {
+        font-size: 30px;
+    }
+
+    .MHMainMnessagePC {
+        display: none;
+    }
+
+    .MHMainMnessageM {
+        display: block;
+    }
+
+    .welcomeMH {
+        font-size: 50px;
+    }
+    
+    .dataMH {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .loadingMainText {
+        font-size: 70px;
+    }
+
+    .headerParadisText {
+        font-size: 50px;
+    }
+
+    .MHMainMnessagePC {
+        display: block;
+    }
+
+    .MHMainMnessageM {
+        display: none;
+    }
+
+    .welcomeMH {
+        font-size: 60px;
+    }
+    
+    .dataMH {
+        font-size: 40px;
+    }
+}
+
+@font-face {
+    font-family: "oldConsole";
+    src: url("fonts/clacon2.ttf");
+}
