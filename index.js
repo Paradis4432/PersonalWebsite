@@ -34,3 +34,7 @@ app.listen(3000, () => { console.log('Server started at port 3000'); });
 app.get("/", (req, res) => {
     res.render("home");
 });
+
+app.get("/test", (req,res) => {
+    res.render("test");
+})
