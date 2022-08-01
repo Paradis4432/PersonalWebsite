@@ -29,13 +29,13 @@
                     <p class="subHeaderNavButtonText">whoami</p>
                 </div>
                 <div class="col headerNavButtonsText">
-                    <p class="subHeaderNavButtonText">about me</p>
+                    <p class="subHeaderNavButtonText">about</p>
                 </div>
                 <div class="col headerNavButtonsText">
                     <p class="subHeaderNavButtonText">services</p>
                 </div>
                 <div class="col headerNavButtonsText">
-                    <p class="subHeaderNavButtonText">Work Edu</p>
+                    <p class="subHeaderNavButtonText">Work/Education</p>
                 </div>
                 <div class="col headerNavButtonsText">
                     <p class="subHeaderNavButtonText">skills</p>
@@ -62,9 +62,9 @@
                 <div class="MHMainMnessagePC">
                     <p class="welcomeMH">WELCOME TO MY WEBSITE</p>
                     <p class="dataMH">I'm a <span class="auto-type"></span></p>
-                    <p style="color: red;">buttons</p>
-                    <button>view work</button>
-                    <button>hire me</button>
+                    <button type="button" class="btn btn-link" style="color: var(--mainTextGold);">view work</button>
+                    <button type="button" class="btn btn-link" style="color: var(--mainTextGold);">hire me</button>
+
                 </div>
 
                 <div class="MHMainMnessageM">
@@ -85,7 +85,11 @@
                             <img src="logo.png" alt="logo" style="border: 1px solid white;">
                         </div>
                         <div class="col">
-                            <p style="color: red;">general text</p>
+                            <p style="color: red;">general text general text general text general text general text
+                                general text general text general text general text general text general text general
+                                text general text general text general text general text general text general text
+                                general text general text general text general text general text general text general
+                                text general text </p>
                         </div>
                     </div>
                 </div>
@@ -343,6 +347,62 @@
 
             <div class="skills">
                 <h1 class="consoleTypeMessage">> Skills</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+                            <h3 style="color: white">Python</h3>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 25%; background-color:#FFD700" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <h3 style="color: white">Python</h3>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 25%; background-color:#FFD700" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+                            <h3 style="color: white">Python</h3>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 25%; background-color:#FFD700" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <h3 style="color: white">Python</h3>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 25%; background-color:#FFD700" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+                            <h3 style="color: white">Python</h3>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 25%; background-color:#FFD700" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <h3 style="color: white">Python</h3>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 25%; background-color:#FFD700" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -351,25 +411,49 @@
                 <h1 class="consoleTypeMessage">> Contact</h1>
 
                 <div class="container">
-                    <div class="col">
-                        <div class="row row-cols-2">
-                            <input type="text" placeholder="name">
-                            <input type="email" name="email" id="email" placeholder="email">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12" style="padding-top: 30px;">
+                            <input type="text" class="contactInput" placeholder="Name" style="width: 100%;">
                         </div>
-                        <input type="text" placeholder="subject"> <br>
-                        <input type="text" placeholder="text">
-                        <input type="submit" value="send">
+                        <div class="col-lg-6 col-sm-12" style="padding-top: 30px;">
+                            <input type="text" class="contactInput" placeholder="Subject" style="width: 100%;">
+                        </div>
+                        <div class="col-12" style="padding-top: 30px;">
+                            <input type="text" class="contactInput" placeholder="Email" style="width: 100%;">
+                        </div>
+                        <div class="col-12" style="padding-top: 30px;">
+                            <input type="text" class="contactInput" placeholder="Message" style="width: 100%;">
+                        </div>
+
+                        <button type="button" class="btn" style="margin: 30px 12px;">Send</button>
+
                     </div>
                 </div>
+
+                <style>
+                    .contactInput {
+                        background: transparent;
+                        border: none;
+                        border-bottom: 1px solid var(--mainTextGold);
+                    }
+
+                    input:focus {
+                        outline: none !important;
+                    }
+
+                    input {
+                        color: white;
+                    }
+                </style>
             </div>
 
         </div>
-
-
-
-
-
     </body>
+
+    <footer>
+        <br><br><br><br><br><br>
+        <h1 style="color: white;">COPY</h1>
+    </footer>
 
 
 
