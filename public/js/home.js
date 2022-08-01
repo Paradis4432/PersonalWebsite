@@ -3,7 +3,6 @@
 //},1000); 
 
 $(() => {
-    /*
     setTimeout(() => {
         $("#loadMainText").text("> Loading.")
     }, 200);
@@ -25,9 +24,10 @@ $(() => {
         $("#mainHome").toggle() 
         $("header").toggle()
     }, 1150);
+    /*
 
-    */
     $("#loadMainText").toggle()
     $("#mainHome").toggle() 
     $("header").toggle()
+    */
 })
