@@ -1,6 +1,6 @@
 # Currently under development
 
-[website](http://dparadis.tech)
+This is a 1 page [website](http://dparadis.tech)
 
 version 0 of my own website, tools used:
 - Bootstrap
